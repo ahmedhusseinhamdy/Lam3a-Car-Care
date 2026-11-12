@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lam3a Car Care | غسيل وتلميع السيارات والموتوسيكلات</title>
+  <meta name="description" content="Lam3a Car Care — غسيل وتنظيف وتلميع احترافي للسيارات والموتوسيكلات. أسعار واضحة وعروض مستمرة.">
+  <meta name="theme-color" content="#07090d">
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Lam3a Car Care"><img src="/img/logo.svg" alt="" width="34" height="34"><span>Lam3a <b>Car Care</b></span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <nav class="nav-links" id="navLinks" aria-label="التنقل الرئيسي">
+        <a href="#services">الخدمات</a>
+        <a href="#offers">العروض</a>
+        <a href="#gallery">المعرض</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <span class="tag">✨ لمعة بتفرق</span>
+        <h1>Lam3a <b>Car Care</b></h1>
+        <p class="slogan" id="slogan">لمعة تفرق.. لعربيتك وموتوسيكلك</p>
+        <div class="cta-row">
+          <a class="btn btn-lime" id="ctaCall" href="#contact">📞 اتصل بينا</a>
+          <a class="btn btn-ghost" id="ctaWa" href="#contact" rel="noopener">💬 واتساب</a>
+        </div>
+        <div class="hero-stats">
+          <div>سيارات وموتوسيكلات<small>خدمة لكل المركبات</small></div>
+          <div>أسعار واضحة<small>من غير مفاجآت</small></div>
+          <div>عروض مستمرة<small>وفّر أكتر</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">وفّر أكتر</span><h2>عروضنا الحالية</h2></div>
+        <div class="cards" id="offersList" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">خدماتنا</span><h2>الخدمات والأسعار</h2><p>الأسعار بالجنيه المصري</p></div>
+        <div class="cards" id="servicesList" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">شوف بنفسك</span><h2>معرض الصور</h2></div>
+        <div class="gallery" id="galleryList"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="services-section">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">يسعدنا خدمتك</span><h2>تواصل معنا</h2></div>
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container">© <span id="year"></span> Lam3a Car Care — جميع الحقوق محفوظة</div></footer>
+  <a class="wa-float" id="waFloat" href="#contact" rel="noopener" aria-label="واتساب" hidden>💬</a>
+
+  <dialog class="lightbox" id="lightbox" aria-label="عرض الصورة">
+    <div class="lb-body"><button class="btn btn-ghost" id="lbClose" type="button">✕ إغلاق</button><img id="lbImg" alt=""><p id="lbCap"></p></div>
+  </dialog>
+
+  <script src="/js/site.js" defer></script>
+</body>
+</html>

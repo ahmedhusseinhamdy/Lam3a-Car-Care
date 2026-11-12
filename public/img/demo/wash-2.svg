@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img"><title>Turbo Wash demo</title><defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0b10"/><stop offset="1" stop-color="#1c2230"/></linearGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4660"/><stop offset="1" stop-color="#0b1a2a"/></linearGradient>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#1ea7ff" stop-opacity=".45"/><stop offset="1" stop-color="#1ea7ff" stop-opacity="0"/></radialGradient></defs><rect width="800" height="450" fill="url(#bg)"/><ellipse cx="400" cy="330" rx="330" ry="40" fill="#000" opacity=".35"/><circle cx="400" cy="220" r="260" fill="url(#glow)"/><g transform="translate(190 175) scale(1.05)">
+<path d="M20 120 Q22 88 60 80 L110 54 Q130 44 170 44 L250 44 Q285 46 310 76 L350 84 Q380 90 382 120 L382 134 L20 134 Z" fill="url(#body)" stroke="#c6ff3d" stroke-width="3"/>
+<path d="M120 62 L168 52 L168 80 L96 80 Z M184 52 L248 52 Q268 56 286 80 L184 80 Z" fill="#7fd0ff" fill-opacity=".35"/>
+<circle cx="100" cy="136" r="26" fill="#0a0c10" stroke="#cfd8e3" stroke-width="4"/><circle cx="100" cy="136" r="10" fill="#cfd8e3"/>
+<circle cx="304" cy="136" r="26" fill="#0a0c10" stroke="#cfd8e3" stroke-width="4"/><circle cx="304" cy="136" r="10" fill="#cfd8e3"/>
+<rect x="364" y="100" width="18" height="10" rx="4" fill="#fff6b0"/></g><path d="M300 156 L304 166 L314 170 L304 174 L300 184 L296 174 L286 170 L296 166 Z" fill="#c6ff3d"/><path d="M560 186 L564 196 L574 200 L564 204 L560 214 L556 204 L546 200 L556 196 Z" fill="#c6ff3d"/><path d="M430 136 L434 146 L444 150 L434 154 L430 164 L426 154 L416 150 L426 146 Z" fill="#c6ff3d"/></svg>

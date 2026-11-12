@@ -1,0 +1,31 @@
+{
+  "name": "lam3a-car-care",
+  "version": "1.0.0",
+  "description": "موقع ولوحة تحكم مغسلة Lam3a Car Care للعربيات والموتوسيكلات",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "setup": "node scripts/setup-env.js",
+    "seed": "node scripts/seed.js",
+    "seed:clear": "node scripts/seed.js --clear",
+    "reset-admin": "node scripts/reset-admin.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.4.5",
+    "exceljs": "^4.4.0",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}

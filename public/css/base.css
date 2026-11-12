@@ -1,0 +1,79 @@
+/* Lam3a Car Care — الأساسيات المشتركة (RTL، ألوان، أزرار، فورم) */
+:root {
+  --bg: #07090d;
+  --surface: #11141a;
+  --surface-2: #181c24;
+  --line: #262c38;
+  --text: #f2f5f9;
+  --muted: #9aa5b5;
+  --blue: #1ea7ff;
+  --blue-dark: #0a7fd6;
+  --lime: #c6ff3d;
+  --danger: #ff5a5f;
+  --ok: #3ddc84;
+  --warn: #ffb020;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --font: 'Cairo', 'Segoe UI', Tahoma, 'Noto Naskh Arabic', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  direction: rtl;
+  text-align: right;
+}
+img { max-width: 100%; display: block; }
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+h1, h2, h3, p { margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.ltr { direction: ltr; unicode-bidi: embed; display: inline-block; }
+[hidden] { display: none !important; }
+
+/* أزرار */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 10px 20px; border-radius: 999px; border: 1px solid transparent;
+  background: var(--blue); color: #02101c; font-weight: 800; cursor: pointer;
+  transition: transform 0.15s, background 0.15s, box-shadow 0.15s; text-decoration: none; min-height: 44px;
+}
+.btn:hover { background: #4cbaff; text-decoration: none; transform: translateY(-1px); }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+.btn-lime { background: var(--lime); color: #101800; }
+.btn-lime:hover { background: #d8ff75; }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--line); }
+.btn-ghost:hover { background: var(--surface-2); border-color: var(--blue); }
+.btn-danger { background: transparent; color: var(--danger); border-color: rgba(255, 90, 95, 0.5); }
+.btn-danger:hover { background: rgba(255, 90, 95, 0.12); }
+.btn-sm { padding: 6px 14px; min-height: 36px; font-size: 0.9rem; }
+
+/* فورم */
+label { display: block; font-weight: 700; margin-bottom: 6px; font-size: 0.95rem; }
+.field { margin-bottom: 14px; }
+input[type='text'], input[type='tel'], input[type='password'], input[type='number'],
+input[type='date'], input[type='search'], input[type='file'], select, textarea {
+  width: 100%; padding: 10px 14px; background: var(--bg); border: 1px solid var(--line);
+  border-radius: 10px; min-height: 44px;
+}
+textarea { min-height: 90px; resize: vertical; }
+input:focus, select:focus, textarea:focus { border-color: var(--blue); outline: none; box-shadow: 0 0 0 3px rgba(30, 167, 255, 0.25); }
+input[type='checkbox'] { width: 18px; height: 18px; accent-color: var(--blue); }
+.hint { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+.error-text { color: var(--danger); font-size: 0.9rem; min-height: 1.2em; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 560px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* رقم/تاريخ ما ينقلبش في RTL */
+input[type='tel'], input[type='number'], input[type='date'] { direction: ltr; text-align: right; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>لوحة التحكم | Lam3a Car Care</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-brand"><img src="/img/logo.svg" alt="" width="34" height="34"><span>Lam3a <b>Car Care</b></span></div>
+      <nav id="nav" aria-label="القائمة">
+        <a href="#/dashboard" data-route="dashboard">📊 الرئيسية</a>
+        <a href="#/customers" data-route="customers">👥 العملاء</a>
+        <a href="#/services" data-route="services">🧽 الخدمات والأسعار</a>
+        <a href="#/inventory" data-route="inventory">📦 المخزن</a>
+        <a href="#/offers" data-route="offers">🏷️ العروض</a>
+        <a href="#/gallery" data-route="gallery">🖼️ معرض الصور</a>
+        <a href="#/settings" data-route="settings">⚙️ الإعدادات</a>
+      </nav>
+      <div class="side-foot">
+        <a href="/" target="_blank" rel="noopener">عرض الموقع ↗</a>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">تسجيل الخروج</button>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="btn btn-ghost btn-sm menu-btn" id="menuBtn" type="button" aria-label="القائمة" aria-expanded="false">☰</button>
+        <h1 id="pageTitle">لوحة التحكم</h1>
+        <span class="who" id="who"></span>
+      </header>
+      <main id="view" class="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div class="scrim" id="scrim" hidden></div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="/js/admin.js" defer></script>
+</body>
+</html>

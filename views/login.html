@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>تسجيل الدخول | Lam3a Car Care</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="login-brand"><img src="/img/logo.svg" alt="" width="56" height="56"><h1>Lam3a <b>Car Care</b></h1><p>لوحة التحكم</p></div>
+    <form id="loginForm" novalidate>
+      <div class="field"><label for="username">اسم المستخدم</label><input id="username" name="username" type="text" autocomplete="username" maxlength="60" placeholder="admin" required autofocus></div>
+      <div class="field"><label for="password">كلمة المرور</label><div class="pw-wrap"><input id="password" name="password" type="password" autocomplete="current-password" maxlength="200" placeholder="••••••••" required><button class="eye" type="button" id="eyeBtn" aria-label="إظهار كلمة المرور" aria-pressed="false">👁</button></div></div>
+      <p class="error-text" id="loginError" role="alert"></p>
+      <button class="btn btn-lime" type="submit" id="loginBtn" style="width:100%">دخول</button>
+    </form>
+    <p class="hint" style="text-align:center;margin-top:16px"><a href="/">← الرجوع للموقع</a></p>
+  </main>
+  <script src="/js/login.js" defer></script>
+</body>
+</html>
